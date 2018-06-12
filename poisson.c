@@ -6,7 +6,7 @@
 # include <time.h>
 
 double L = 1.0;			/* linear size of square region */
-int N = 32;			/* number of interior points per dim */
+int N = 700;			/* number of interior points per dim */
 
 double *u, *u_new;		/* linear arrays to hold solution */
 
@@ -95,7 +95,7 @@ int main ( int argc, char *argv[] )
   }
   else
   {
-    N = 32;
+    N = 700;
   }
 
   if ( 2 < argc )

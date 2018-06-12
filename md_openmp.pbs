@@ -1,9 +1,11 @@
 #PBS -N md_openmp
-#PBS -q phi-n3h24
-#PBS -l nodes=2:ppn=1
-#PBS -l walltime=00:15:00
+#PBS -q phi-n6h96
+#PBS -l nodes=6:ppn=1
+#PBS -l walltime=00:30:00
 
 cd $PBS_O_WORKDIR
-export OMP_NUM_THREADS=8
-time ./md_openmp
+
+export OMP_NUM_THREADS=15
+
+time ./md_openmp|sort
 
